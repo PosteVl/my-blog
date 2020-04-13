@@ -1,0 +1,97 @@
+---
+layout: post
+title:  "css stuff"
+date:   2020-04-11 18:23:28 +0100
+categories: first blog post
+---
+
+in CSS you can have :root selector at the top, where you define global variables
+
+The animation properties control how the animation should behave and the @keyframes rule controls what happens during that animation. There are eight animation properties in total.
+animation-name, -duration, -iteration-count, -fill-mode : forwards to stay animated (very useful for buttons hovering)
+
+animation-timing-function: ease/ease out/ease in/linear/ cubic-bezier(p1, p2, p3, p4)
+
+some text tags: s -bold, em-italic, u- underlined, s-strikethrough
+
+hr - line separator
+
+see box-shadow for one or more shadows
+
+transform property to add interactivity
+
+pseudoclasses :hover etc
+
+relative positioning vs absolute positioning vs fixed positioning vs sticky
+
+z-indexing
+
+margin auto to center
+
+split-complement scheme for picking colors from the color wheel
+
+hsl() for hue saturation lightness -> another way to specify colors apart from rgb() or rgba() ; evry useful for obtaining different shades of the same color
+
+also colors => liniar-gradient() function and repeating-liniar-gradient()
+
+::before and ::after pseudo elements
+
+### Organising content tags for screen readers accessibility
+
+div - no relationships between groups
+
+main - main focus of the page
+
+article - self contained stuff
+
+section - grouping thematically similar content
+
+header
+
+nav
+
+audio and controls
+
+figure and figcaption
+
+label
+
+fieldset and legend for radiobuttons
+
+time and datetime
+
+hide things off screen for screenereaders
+
+accesskey for buttons or anchors
+
+tabindex for tabbing use
+
+
+viewport units instead of percentage
+
+
+
+
+### USING FLEXBOX
+
+Adding display: flex to an element turns it into a flex container. This makes it possible to align any children of that element into rows or columns. You do this by adding the flex-direction property to the parent item and setting it to row or column. Creating a row will align the children horizontally, and creating a column will align the children vertically.
+
+Other options for flex-direction are row-reverse and column-reverse.
+
+Note: The default value for the flex-direction property is row.
+
+justify-content aligns along the main flex axis (horizontal for rows and vertical for columns) : flex-start, -end, space-between, space-around, space-evenly
+
+align-items aligns along the cross flex axis(horizontal for columns and vertical for rows) : flex-start, -end, center, stretch, baseline
+
+
+flex-wrap  : nowrap , wrao, wrap-reverse
+
+flex-shrink: number;  flex-grow: number; flex-basis: size;   => all these 3 can be set using -> flex: number number size
+
+order, align-self
+
+
+nodejs - created for the sole purpose of changing how internet operation work from a threaded model to an event loop model, where all I/O is non blocking, especially by introducing promises and making use of js callback functions
+
+https://gist.github.com/ry/a3d0bbbff196af633995
