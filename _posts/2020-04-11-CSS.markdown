@@ -12,7 +12,7 @@ animation-name, -duration, -iteration-count, -fill-mode : forwards to stay anima
 
 animation-timing-function: ease/ease out/ease in/linear/ cubic-bezier(p1, p2, p3, p4)
 
-some text tags: s -bold, em-italic, u- underlined, s-strikethrough
+some text tags: b -bold, em-italic, u- underlined, s-strikethrough
 
 hr - line separator
 
@@ -92,6 +92,15 @@ flex-shrink: number;  flex-grow: number; flex-basis: size;   => all these 3 can 
 order, align-self
 
 
-nodejs - created for the sole purpose of changing how internet operation work from a threaded model to an event loop model, where all I/O is non blocking, especially by introducing promises and making use of js callback functions
+nodejs - created for the sole purpose of changing how internet operation work from a threaded model(each op gets done in a thread) to an event loop model(a preemptive job scheduling model ), where all I/O is non blocking, especially by introducing promises and making use of js callback functions
 
 https://gist.github.com/ry/a3d0bbbff196af633995
+
+React - following fullstackopen 
+    - state hooks to add state to components
+    hooks may only be called from the inside of a function body that defines a React component
+    - event handling must always be done with functions ( see -button onClick- example in part1d of the course)
+    - components - similar but more complex than methods
+    - always change state through the state of an object and not directly
+
+    
