@@ -96,11 +96,16 @@ nodejs - created for the sole purpose of changing how internet operation work fr
 
 https://gist.github.com/ry/a3d0bbbff196af633995
 
-React - following fullstackopen 
+### React - following fullstackopen 
+
     - state hooks to add state to components
+
     hooks may only be called from the inside of a function body that defines a React component
+
     - event handling must always be done with functions ( see -button onClick- example in part1d of the course)
+
     - components - similar but more complex than methods
+
     - always change state through the state of an object and not directly
 
     
