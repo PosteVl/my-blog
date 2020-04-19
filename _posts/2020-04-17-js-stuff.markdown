@@ -1,15 +1,40 @@
 ---
 layout: post
-title:  "javascript stuffs"
+title:  "javascript stuff"
 date:   2020-04-17 10:55:45 +0100
 categories: first blog post
 ---
 
 Array.includes(desiredValue)
+
 Array.some(object => object.specificField === deisredValue) - for arrays of objects that include a specific field
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
-    XHR =xml http request was the old way, now use fetch method based on promises
+JavaScript EventLoop resources: [clickme1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop) and [clickme2](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
+XHR =xml http request was the old way, now use [fetch](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch) method based on promises | similar to fetch, there is the [axios](https://github.com/axios/axios) external library
 
 javascript engines are currently single threaded
-In today's browsers, it is possible to run parallelized code with the help of so-called web workers. The event loop of an individual browser window is, however, still only handled by a single thread.
+
+In today's browsers, it is possible to run parallelized code with the help of so-called [web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers). 
+
+The event loop of an individual browser window is, however, still only handled by a single thread -> [Multithreading JavaScript](https://medium.com/techtrument/multithreading-javascript-46156179cf9a)
+
+<br>
+
+### Promises
+
+A promise is an object that represents an asynchronous operation. A promise can have three distinct states:
+
+- The promise is <b>pending</b>: It means that the final value (one of the following two) is not available yet.
+
+- The promise is <b>fulfilled</b>: It means that the operation has completed and the final value is available, which generally is a successful operation. This state is sometimes also called resolved.
+
+- The promise is <b>rejected</b>: It means that an error prevented the final value from being determined, which generally represents a failed operation.
+
+<br>
+
+### Installing dependencies
+
+- <b>runtime dependency</b> (<i>npm install dependency --save</i>) the execution of the program requires the existence of the library 
+
+- <b>development dependency</b> (<i>npm install dependency --save-dev</i>) the program itself doesn't require it, it is only used for assistance during software dev

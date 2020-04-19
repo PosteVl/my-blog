@@ -98,14 +98,24 @@ https://gist.github.com/ry/a3d0bbbff196af633995
 
 ### React - following fullstackopen 
 
-    - state hooks to add state to components
+- state hooks to add state to components
 
-    hooks may only be called from the inside of a function body that defines a React component
+ hooks may only be called from the inside of a function body that defines a React component
 
-    - event handling must always be done with functions ( see -button onClick- example in part1d of the course)
+- event handling must always be done with functions ( see -button onClick- example in part1d of the course)
 
-    - components - similar but more complex than methods
+- components - similar but more complex than methods
 
-    - always change state through the state of an object and not directly
+- always change state through the state of an object and not directly
 
-    
+- <b>Effect hooks</b> : 
+
+    The Effect Hook lets you perform side effects in function components. Data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects.
+
+    useEffect actually takes two parameters. The first is a function, the effect itself. According to the documentation:
+
+    By default, effects run after every completed render, but you can choose to fire it only when certain values have changed.
+
+    So by default the effect is always run after the component has been rendered. In our case, however, we only want to execute the effect along with the first render.
+
+    The second parameter of useEffect is used to specify how often the effect is run. If the second parameter is an empty array [], then the effect is only run along with the first render of the component.
