@@ -38,3 +38,10 @@ A promise is an object that represents an asynchronous operation. A promise can 
 - <b>runtime dependency</b> (<i>npm install dependency --save</i>) the execution of the program requires the existence of the library 
 
 - <b>development dependency</b> (<i>npm install dependency --save-dev</i>) the program itself doesn't require it, it is only used for assistance during software dev
+
+
+### HOOKS IN REACT
+
+- <b>state hooks</b> provide state to React components defined as functions (<i> functional components</i>)
+
+- <b>effect hooks</b> you perform side effects in function components. Data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects.
